@@ -27,7 +27,7 @@ public class AvlTree {
                 p.left = insert(p.left, x);
                 if( height(p.left) - height(p.right) == 2)
                     if( x < p.left.data)
-                        p = singlerotateleft(p);
+                        p = singlerotateright(p);
                 else
                         p = doublerotateright(p);
             }
